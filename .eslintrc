@@ -1,11 +1,14 @@
 {
   "extends": "babel",
   "rules": {
+    "arrow-parens": "off",
     "comma-dangle": ["error", "always-multiline"],
     "curly": ["error", "multi-line"],
     "func-call-spacing": "error",
+    "indent": "off",
     "key-spacing": "error",
-    "no-multi-spaces": "error"
+    "no-multi-spaces": "error",
+    "quotes": "off"
   },
   "env": {
     "node": true,
