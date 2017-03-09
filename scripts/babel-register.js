@@ -1,5 +1,5 @@
 var babel = require("../package.json").babel;
-var register = require("babel-register");
+var register = require("babel-register").default;
 var path = require("path");
 
 if (babel.plugins) {
