@@ -14,5 +14,9 @@
     "babel-plugin-transform-react-jsx": "7.0.0-alpha.1",
     "babel-plugin-transform-react-jsx-source": "7.0.0-alpha.1",
     "babel-plugin-transform-react-jsx-self": "7.0.0-alpha.1"
+  },
+  "devDependencies": {
+    "babel-helper-transform-fixture-test-runner": "^7.0.0-alpha.1",
+    "babel-helper-plugin-test-runner": "^7.0.0-alpha.1"
   }
 }
