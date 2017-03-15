@@ -2,12 +2,16 @@
 
 > Babel preset for all React plugins.
 
-This preset includes the following plugins/presets:
+This preset always includes the following plugins/presets:
 
-- [preset-flow](https://babeljs.io/docs/plugins/preset-flow/)
 - [syntax-jsx](https://babeljs.io/docs/plugins/syntax-jsx/)
 - [transform-react-jsx](https://babeljs.io/docs/plugins/transform-react-jsx/)
 - [transform-react-display-name](https://babeljs.io/docs/plugins/transform-react-display-name/)
+
+And with the `development` option:
+
+- [transform-react-jsx-self](https://babeljs.io/docs/plugins/transform-react-jsx-self/)
+- [transform-react-jsx-source](https://babeljs.io/docs/plugins/transform-react-jsx-source/)
 
 ## Install
 
@@ -54,7 +58,7 @@ View the output
 ### Via CLI
 
 ```sh
-babel script.js --presets react 
+babel script.js --presets react
 ```
 
 ### Via Node API
@@ -64,3 +68,11 @@ require("babel-core").transform("code", {
   presets: ["react"]
 });
 ```
+
+## Options
+
+### `development`
+
+`boolean`, defaults to `false`.
+
+Toggles plugins that aid in development, such as [`babel-plugin-transform-react-jsx-self`](https://babeljs.io/docs/plugins/transform-react-jsx-self/) and [`babel-plugin-transform-react-jsx-source`](https://babeljs.io/docs/plugins/transform-react-jsx-source/).
